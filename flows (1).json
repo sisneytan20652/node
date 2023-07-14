@@ -1,0 +1,2945 @@
+[
+    {
+        "id": "8fd05549.35a2e8",
+        "type": "tab",
+        "label": "Всї_Сенсори",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "8edc8af8.77ae08",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "проверка влажности",
+        "func": "var H_BALKON =global.get('H_BALKON') || 0;\nvar newMsgH = { payload: msg.payload.humidity };\nglobal.set('H_BALKON',newMsgH);\nmsg.payload=H_BALKON;\nreturn H_BALKON;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57bc105c.3effa",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "проверка температури",
+        "func": "var T_BALKON =global.get('T_BALKON') || 0;\nvar newMsgT = { payload: msg.payload.temperature };\nglobal.set('T_BALKON',newMsgT);\nmsg.payload=T_BALKON;\nreturn T_BALKON;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1acda78d.126db8",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "проверка влажности",
+        "func": "var H_KITCHEN =global.get('H_KITCHEN') || 0;\nvar newMsgH = { payload: msg.payload.humidity };\nglobal.set('H_KITCHEN',newMsgH);\nmsg.payload=H_KITCHEN;\nreturn H_KITCHEN;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fcf90169.21d4b",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "проверка температури",
+        "func": "var T_KITCHEN = global.get('T_KITCHEN') || 0;\nvar newMsgT = { payload: msg.payload.temperature };\nglobal.set('T_KITCHEN',newMsgT);\nmsg.payload=T_KITCHEN;\nreturn T_KITCHEN;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf941c0.da73de8",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "проверка влажности",
+        "func": "var H_ZAL =global.get('H_ZAL') || 0;\nvar newMsgH = { payload: msg.payload.humidity };\nglobal.set('H_ZAL',newMsgH);\nmsg.payload=H_ZAL;\nreturn H_ZAL;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "44f134cc.5c022c",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "проверка температури",
+        "func": "var T_ZAL = global.get('T_ZAL') || 0;\nvar newMsgT = { payload: msg.payload.temperature };\nglobal.set('T_ZAL',newMsgT);\nmsg.payload=T_ZAL;\nreturn T_ZAL;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "934efd76.3d499",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "проверка влажности",
+        "func": "var H_HOLL=global.get('H_HOLL') || 0;\nvar newMsgH = { payload: msg.payload.humidity };\nglobal.set('H_HOLL',newMsgH);\nmsg.payload=H_HOLL;\nreturn H_HOLL;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57cb49c8.311b38",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "проверка температури",
+        "func": "var T_HOLL=global.get('T_HOLL') || 0;\nvar newMsgT = { payload: msg.payload.temperature };\nglobal.set('T_HOLL',newMsgT);\nmsg.payload=T_HOLL;\nreturn T_HOLL;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7bdb987.6921068",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "проверка влажности",
+        "func": "var H_BATHROOM =global.get('H_BATHROOM') || 0;\nvar newMsgH = { payload: msg.payload.humidity };\nglobal.set('H_BATHROOM',newMsgH);\nmsg.payload=H_BATHROOM;\nreturn H_BATHROOM;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8a2fadb5.28bbe",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "проверка температури",
+        "func": "var T_BATHROOM = global.get('T_BATHROOM') || 0;\nvar newMsgT = { payload: msg.payload.temperature };\nglobal.set('T_BATHROOM',newMsgT);\nmsg.payload=T_BATHROOM;\nreturn T_BATHROOM;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "742ed175.4df7d",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "Температура підлоги балкон",
+        "topic": "ESP_OUT&BALKON/temp_floor/temperature",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "299e6ecc.1aff42",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 120,
+        "y": 180,
+        "wires": [
+            [
+                "d990df65.53555",
+                "fafdc78d.81b678",
+                "5aaaacb916a8859e"
+            ]
+        ]
+    },
+    {
+        "id": "9e4a9f16.8444b",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "Температура підлоги zal",
+        "topic": "ZAL_FLOOR_1/sum/Dummy",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "299e6ecc.1aff42",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 110,
+        "y": 380,
+        "wires": [
+            [
+                "30f5bc63.a1f7c4",
+                "d8e8f9f0.0ec3a8",
+                "55572d50099de0a5"
+            ]
+        ]
+    },
+    {
+        "id": "d0626c2e.2a3c7",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "Температура підлоги kitchen",
+        "topic": "Sensors_Stryi_3/kitchen/temperature",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "299e6ecc.1aff42",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 120,
+        "y": 780,
+        "wires": [
+            [
+                "1ce42a23.092436",
+                "27e13220.1956ce",
+                "cc5cfd5bd78f23a5"
+            ]
+        ]
+    },
+    {
+        "id": "e7d91cc6.a0a7e",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "Температура підлоги holl",
+        "topic": "Sensors_Stryi_3/holl/temperature",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "299e6ecc.1aff42",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 110,
+        "y": 580,
+        "wires": [
+            [
+                "a0dd4241.29e39",
+                "30d9ec29.c66684",
+                "4d3016e09eb8139c"
+            ]
+        ]
+    },
+    {
+        "id": "9e2588b0.a6e778",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "Температура підлоги bathroom",
+        "topic": "Sensors_Stryi_3/bathroom/temperature",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "299e6ecc.1aff42",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 130,
+        "y": 1000,
+        "wires": [
+            [
+                "18cc0bf2.527324",
+                "ed1b985a.f88718",
+                "b66d56c851b922f4"
+            ]
+        ]
+    },
+    {
+        "id": "9e4db5e0.a38128",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "kitchen/t",
+        "qos": "",
+        "retain": "true",
+        "broker": "299e6ecc.1aff42",
+        "x": 1020,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "9dd370e4.905e5",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "kitchen/h",
+        "qos": "",
+        "retain": "true",
+        "broker": "299e6ecc.1aff42",
+        "x": 1020,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "267dea3b.a95416",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "bathroom/h",
+        "qos": "",
+        "retain": "true",
+        "broker": "fb49feae.23c74",
+        "x": 1030,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "129e2248.f4d0be",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "bathroom/t",
+        "qos": "",
+        "retain": "true",
+        "broker": "fb49feae.23c74",
+        "x": 1030,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "356c06c6.92559a",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "holl/t",
+        "qos": "",
+        "retain": "true",
+        "broker": "299e6ecc.1aff42",
+        "x": 1010,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "3f021be1.d2ce24",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "holl/h",
+        "qos": "",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "299e6ecc.1aff42",
+        "x": 1010,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "1ec27788.873a28",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "zal/t",
+        "qos": "",
+        "retain": "true",
+        "broker": "299e6ecc.1aff42",
+        "x": 1010,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c9f5bbe2.b0cbb8",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "zal/h",
+        "qos": "",
+        "retain": "true",
+        "broker": "299e6ecc.1aff42",
+        "x": 1010,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "473e5d4e.d3bcd4",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "balkon/h",
+        "qos": "",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "299e6ecc.1aff42",
+        "x": 1020,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "80d34083.a45cc",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "balkon/t",
+        "qos": "",
+        "retain": "true",
+        "broker": "299e6ecc.1aff42",
+        "x": 1020,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d62326c3.a86448",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "H_BALKON",
+        "payloadType": "global",
+        "x": 360,
+        "y": 60,
+        "wires": [
+            [
+                "77ae4f48.55b"
+            ]
+        ]
+    },
+    {
+        "id": "e6016833.cd9248",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "T_BALKON",
+        "payloadType": "global",
+        "x": 350,
+        "y": 100,
+        "wires": [
+            [
+                "cef6d446.5c92d8"
+            ]
+        ]
+    },
+    {
+        "id": "eba7943d.385c08",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "H_ZAL",
+        "payloadType": "global",
+        "x": 340,
+        "y": 260,
+        "wires": [
+            [
+                "4b4c9267.25ecac"
+            ]
+        ]
+    },
+    {
+        "id": "5efef707.baf338",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "T_ZAL",
+        "payloadType": "global",
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "5655d42a.65cabc"
+            ]
+        ]
+    },
+    {
+        "id": "ecca52c2.bfe79",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "H_HOLL",
+        "payloadType": "global",
+        "x": 340,
+        "y": 460,
+        "wires": [
+            [
+                "8b585aa6.559138"
+            ]
+        ]
+    },
+    {
+        "id": "864ea5bd.e1eec8",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "T_HOLL",
+        "payloadType": "global",
+        "x": 340,
+        "y": 500,
+        "wires": [
+            [
+                "e23efb36.5d76e8"
+            ]
+        ]
+    },
+    {
+        "id": "66c50811.a6d3a8",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "H_KITCHEN",
+        "payloadType": "global",
+        "x": 360,
+        "y": 660,
+        "wires": [
+            [
+                "32d32a24.19c0d6"
+            ]
+        ]
+    },
+    {
+        "id": "5489d988.8cf9a8",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "T_KITCHEN",
+        "payloadType": "global",
+        "x": 360,
+        "y": 700,
+        "wires": [
+            [
+                "77972bc7.268264"
+            ]
+        ]
+    },
+    {
+        "id": "c0486499.462cc8",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "H_BATHROOM",
+        "payloadType": "global",
+        "x": 370,
+        "y": 860,
+        "wires": [
+            [
+                "75418c67.e7b0e4"
+            ]
+        ]
+    },
+    {
+        "id": "e3d0e7fc.cf7fc8",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "T_BATHROOM",
+        "payloadType": "global",
+        "x": 370,
+        "y": 900,
+        "wires": [
+            [
+                "5b6a6eb2.a6c9d"
+            ]
+        ]
+    },
+    {
+        "id": "b0b5fb67.bfb4b8",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "holl/h",
+        "qos": "",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fb49feae.23c74",
+        "x": 1170,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "9a829049.d8513",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "holl/t",
+        "qos": "",
+        "retain": "true",
+        "broker": "fb49feae.23c74",
+        "x": 1170,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "c8faeaf8.9e50c8",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "SLS/Коридор_sensor",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "299e6ecc.1aff42",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 100,
+        "y": 500,
+        "wires": [
+            [
+                "57cb49c8.311b38"
+            ]
+        ]
+    },
+    {
+        "id": "a0dd4241.29e39",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "Температура підлоги holl",
+        "topic": "Sensors_Stryi_1/Temp_ESP_4/Temperature",
+        "qos": "0",
+        "retain": "",
+        "broker": "fb49feae.23c74",
+        "x": 1070,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "d8e8f9f0.0ec3a8",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "Температура підлоги zal",
+        "topic": "Sensors_Stryi_1/Temp_ESP_2/Temperature",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fb49feae.23c74",
+        "x": 1070,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "fafdc78d.81b678",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "Температура підлоги балкон",
+        "topic": "Sensors_Stryi_1/Temp_ESP_1/Temperature",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fb49feae.23c74",
+        "x": 1090,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "1ce42a23.092436",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "Температура підлоги kitchen",
+        "topic": "Sensors_Stryi_1/Temp_ESP_6/Temperature",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fb49feae.23c74",
+        "x": 1090,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "18cc0bf2.527324",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "Температура підлоги bathroom",
+        "topic": "Sensors_Stryi_1/Temp_ESP_5/Temperature",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fb49feae.23c74",
+        "x": 1090,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "538d7671.0c45e8",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "Вулиця",
+        "topic": "Sensors_Stryi_1/Temp_ESP_3/Temperature",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fb49feae.23c74",
+        "x": 1020,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "885d051e.31f2b8",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "Вулиця",
+        "topic": "ESP_OUT&BALKON/temp_out/temperature",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "299e6ecc.1aff42",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 50,
+        "y": 1100,
+        "wires": [
+            [
+                "538d7671.0c45e8",
+                "896e9b37.cb6408",
+                "70ec5a85c1867147",
+                "610c2308e572192c",
+                "755534e68675984a"
+            ]
+        ]
+    },
+    {
+        "id": "23669b6.0c02a64",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "SLS/Коридор_sensor",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "299e6ecc.1aff42",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 100,
+        "y": 460,
+        "wires": [
+            [
+                "934efd76.3d499"
+            ]
+        ]
+    },
+    {
+        "id": "8b585aa6.559138",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "H_HOLL",
+        "func": "var payload = msg.payload\nreturn payload;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 460,
+        "wires": [
+            [
+                "3f021be1.d2ce24",
+                "9606a31a.b5e9d"
+            ]
+        ]
+    },
+    {
+        "id": "e23efb36.5d76e8",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "T_HOLL",
+        "func": "var payload1 = msg.payload\nreturn payload1;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 500,
+        "wires": [
+            [
+                "96856852.98a568"
+            ]
+        ]
+    },
+    {
+        "id": "9606a31a.b5e9d",
+        "type": "change",
+        "z": "8fd05549.35a2e8",
+        "name": "H_HOLL",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 460,
+        "wires": [
+            [
+                "b0b5fb67.bfb4b8",
+                "897028dc.afbad8"
+            ]
+        ]
+    },
+    {
+        "id": "96856852.98a568",
+        "type": "change",
+        "z": "8fd05549.35a2e8",
+        "name": "T_HOLL",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 500,
+        "wires": [
+            [
+                "356c06c6.92559a",
+                "9a829049.d8513",
+                "172f4348.944d2d"
+            ]
+        ]
+    },
+    {
+        "id": "ab6ef204.31b84",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "SLS/Балкон_sensor",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "299e6ecc.1aff42",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 80,
+        "y": 60,
+        "wires": [
+            [
+                "8edc8af8.77ae08"
+            ]
+        ]
+    },
+    {
+        "id": "a66cf2dd.b89f3",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "SLS/Балкон_sensor",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "299e6ecc.1aff42",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 90,
+        "y": 100,
+        "wires": [
+            [
+                "57bc105c.3effa"
+            ]
+        ]
+    },
+    {
+        "id": "77ae4f48.55b",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "H_Balkon",
+        "func": "var payload2 = msg.payload\nreturn payload2;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 60,
+        "wires": [
+            [
+                "9a4d290c.2102e8"
+            ]
+        ]
+    },
+    {
+        "id": "9a4d290c.2102e8",
+        "type": "change",
+        "z": "8fd05549.35a2e8",
+        "name": "H_Balkon",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 60,
+        "wires": [
+            [
+                "473e5d4e.d3bcd4",
+                "2d02732b.da09dc",
+                "b504794.3053188"
+            ]
+        ]
+    },
+    {
+        "id": "cef6d446.5c92d8",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "T_Balkon",
+        "func": "var payload3 = msg.payload\nreturn payload3;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 100,
+        "wires": [
+            [
+                "93f7e98f.048568"
+            ]
+        ]
+    },
+    {
+        "id": "93f7e98f.048568",
+        "type": "change",
+        "z": "8fd05549.35a2e8",
+        "name": "T_Balkon",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 100,
+        "wires": [
+            [
+                "80d34083.a45cc",
+                "5759c3f2.9304cc",
+                "dc4e02c0.d0b2f"
+            ]
+        ]
+    },
+    {
+        "id": "2d02732b.da09dc",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "balkon/h",
+        "qos": "",
+        "retain": "true",
+        "broker": "fb49feae.23c74",
+        "x": 1160,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "5759c3f2.9304cc",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "balkon/t",
+        "qos": "",
+        "retain": "true",
+        "broker": "fb49feae.23c74",
+        "x": 1160,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "a399d536.aaf7f8",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "kitchen/h",
+        "qos": "",
+        "retain": "true",
+        "broker": "fb49feae.23c74",
+        "x": 1180,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "bf1d7183.f0e96",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "kitchen/t",
+        "qos": "",
+        "retain": "true",
+        "broker": "fb49feae.23c74",
+        "x": 1180,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "77972bc7.268264",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "T_Kitchen",
+        "func": "var payload5 = msg.payload\nreturn payload5;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 700,
+        "wires": [
+            [
+                "54e25a4a.d9a834"
+            ]
+        ]
+    },
+    {
+        "id": "54e25a4a.d9a834",
+        "type": "change",
+        "z": "8fd05549.35a2e8",
+        "name": "T_Kitchen",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 700,
+        "wires": [
+            [
+                "9e4db5e0.a38128",
+                "bf1d7183.f0e96",
+                "c8dd8c40.a4963"
+            ]
+        ]
+    },
+    {
+        "id": "32d32a24.19c0d6",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "H_Kitchen",
+        "func": "var payload4 = msg.payload;\nreturn payload4;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 550,
+        "y": 660,
+        "wires": [
+            [
+                "72593629.5e9168"
+            ]
+        ]
+    },
+    {
+        "id": "72593629.5e9168",
+        "type": "change",
+        "z": "8fd05549.35a2e8",
+        "name": "H_Kitchen",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 660,
+        "wires": [
+            [
+                "a399d536.aaf7f8",
+                "9dd370e4.905e5",
+                "2b22ec3d.ec24b4"
+            ]
+        ]
+    },
+    {
+        "id": "e367f147.f8323",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "SLS/Кухня_sensor",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "299e6ecc.1aff42",
+        "inputs": 0,
+        "x": 90,
+        "y": 660,
+        "wires": [
+            [
+                "1acda78d.126db8"
+            ]
+        ]
+    },
+    {
+        "id": "5390bb86.08d7d4",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "SLS/Кухня_sensor",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "299e6ecc.1aff42",
+        "inputs": 0,
+        "x": 90,
+        "y": 700,
+        "wires": [
+            [
+                "fcf90169.21d4b"
+            ]
+        ]
+    },
+    {
+        "id": "578b76ec.bdc268",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "SLS/Зал_sensor",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "299e6ecc.1aff42",
+        "inputs": 0,
+        "x": 80,
+        "y": 260,
+        "wires": [
+            [
+                "bf941c0.da73de8"
+            ]
+        ]
+    },
+    {
+        "id": "150093d0.11f7ac",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "SLS/Зал_sensor",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "299e6ecc.1aff42",
+        "inputs": 0,
+        "x": 80,
+        "y": 300,
+        "wires": [
+            [
+                "44f134cc.5c022c"
+            ]
+        ]
+    },
+    {
+        "id": "5655d42a.65cabc",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "T_Zal",
+        "func": "var payload7 = msg.payload\nreturn payload7;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 530,
+        "y": 300,
+        "wires": [
+            [
+                "2e21e6db.badf1a"
+            ]
+        ]
+    },
+    {
+        "id": "2e21e6db.badf1a",
+        "type": "change",
+        "z": "8fd05549.35a2e8",
+        "name": "T_Zal",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 300,
+        "wires": [
+            [
+                "1ec27788.873a28",
+                "38a5ba65.9ba0b6",
+                "955d3a87.b4fce8"
+            ]
+        ]
+    },
+    {
+        "id": "4b4c9267.25ecac",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "H_Zal",
+        "func": "var payload6 = msg.payload\nreturn payload6;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 260,
+        "wires": [
+            [
+                "41830e4a.9b0d9"
+            ]
+        ]
+    },
+    {
+        "id": "41830e4a.9b0d9",
+        "type": "change",
+        "z": "8fd05549.35a2e8",
+        "name": "H_Zal",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 260,
+        "wires": [
+            [
+                "c9f5bbe2.b0cbb8",
+                "3d15b889.294ab8",
+                "dbe8f164.5ea64"
+            ]
+        ]
+    },
+    {
+        "id": "38a5ba65.9ba0b6",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "zal/t",
+        "qos": "",
+        "retain": "true",
+        "broker": "fb49feae.23c74",
+        "x": 1170,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3d15b889.294ab8",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "zal/h",
+        "qos": "",
+        "retain": "true",
+        "broker": "fb49feae.23c74",
+        "x": 1170,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "538ea552.7a754c",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "SLS/Туалет_sensor",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "299e6ecc.1aff42",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 90,
+        "y": 860,
+        "wires": [
+            [
+                "7bdb987.6921068"
+            ]
+        ]
+    },
+    {
+        "id": "95b3c0ae.2900a",
+        "type": "mqtt in",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "SLS/Туалет_sensor",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "299e6ecc.1aff42",
+        "inputs": 0,
+        "x": 90,
+        "y": 900,
+        "wires": [
+            [
+                "8a2fadb5.28bbe"
+            ]
+        ]
+    },
+    {
+        "id": "5b6a6eb2.a6c9d",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "T_BATHROOM",
+        "func": "var payload9 = msg.payload;\nreturn payload9;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 900,
+        "wires": [
+            [
+                "1d85b89e.ac01f7"
+            ]
+        ]
+    },
+    {
+        "id": "1d85b89e.ac01f7",
+        "type": "change",
+        "z": "8fd05549.35a2e8",
+        "name": "T_BATHROOM",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 900,
+        "wires": [
+            [
+                "129e2248.f4d0be",
+                "f101bee2.2759b",
+                "ac86703.c718e9"
+            ]
+        ]
+    },
+    {
+        "id": "75418c67.e7b0e4",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "H_BATHROOM",
+        "func": "var payload8 = msg.payload;\nreturn payload8;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 580,
+        "y": 860,
+        "wires": [
+            [
+                "2560ea9c.247346"
+            ]
+        ]
+    },
+    {
+        "id": "2560ea9c.247346",
+        "type": "change",
+        "z": "8fd05549.35a2e8",
+        "name": "H_BATHROOM",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 860,
+        "wires": [
+            [
+                "267dea3b.a95416",
+                "a56d39ea.f380d8",
+                "3b55a920.a7c7d6"
+            ]
+        ]
+    },
+    {
+        "id": "a56d39ea.f380d8",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "bathroom/h",
+        "qos": "",
+        "retain": "true",
+        "broker": "299e6ecc.1aff42",
+        "x": 1030,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "f101bee2.2759b",
+        "type": "mqtt out",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "topic": "bathroom/t",
+        "qos": "",
+        "retain": "true",
+        "broker": "299e6ecc.1aff42",
+        "x": 1030,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "dbe8f164.5ea64",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "b98805b9.c45be8",
+        "order": 1,
+        "width": 5,
+        "height": 4,
+        "name": "",
+        "icon": "",
+        "label": "вологість",
+        "unit": "%",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#0000c4",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 100,
+                "col": "#0000c4",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 780,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "955d3a87.b4fce8",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "b98805b9.c45be8",
+        "order": 2,
+        "width": 5,
+        "height": 4,
+        "name": "",
+        "icon": "",
+        "label": "повітря",
+        "unit": "*С",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#ff00ff",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 40,
+                "col": "#ff00ff",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 780,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "30f5bc63.a1f7c4",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "b98805b9.c45be8",
+        "order": 3,
+        "width": 5,
+        "height": 4,
+        "name": "",
+        "icon": "",
+        "label": "підлога",
+        "unit": "*С",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#ff8000",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 40,
+                "col": "#ff8000",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 580,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "897028dc.afbad8",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "de3391ed.804fc",
+        "order": 1,
+        "width": 5,
+        "height": 4,
+        "name": "",
+        "icon": "",
+        "label": "вологість",
+        "unit": "%",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#0000c4",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 100,
+                "col": "#0000c4",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 780,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "172f4348.944d2d",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "de3391ed.804fc",
+        "order": 2,
+        "width": 5,
+        "height": 4,
+        "name": "",
+        "icon": "",
+        "label": "повітря",
+        "unit": "*С",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#ff00ff",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 40,
+                "col": "#ff00ff",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 780,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "30d9ec29.c66684",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "de3391ed.804fc",
+        "order": 3,
+        "width": 5,
+        "height": 4,
+        "name": "",
+        "icon": "",
+        "label": "підлога",
+        "unit": "*С",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#ff8000",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 40,
+                "col": "#ff8000",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 580,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "2b22ec3d.ec24b4",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "e84c89bf.6f0658",
+        "order": 1,
+        "width": 5,
+        "height": 4,
+        "name": "",
+        "icon": "",
+        "label": "вологість",
+        "unit": "%",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#0000c4",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 100,
+                "col": "#0000c4",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 780,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "c8dd8c40.a4963",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "e84c89bf.6f0658",
+        "order": 2,
+        "width": 5,
+        "height": 4,
+        "name": "",
+        "icon": "",
+        "label": "повітря",
+        "unit": "*С",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#ff00ff",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 40,
+                "col": "#ff00ff",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 780,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "27e13220.1956ce",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "e84c89bf.6f0658",
+        "order": 3,
+        "width": 5,
+        "height": 4,
+        "name": "",
+        "icon": "",
+        "label": "підлога",
+        "unit": "*С",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#ff8000",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 40,
+                "col": "#ff8000",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 580,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "3b55a920.a7c7d6",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "d23afecb.5be03",
+        "order": 1,
+        "width": 5,
+        "height": 4,
+        "name": "",
+        "icon": "",
+        "label": "вологість",
+        "unit": "%",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#0000c4",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 100,
+                "col": "#0000c4",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 780,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "ac86703.c718e9",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "d23afecb.5be03",
+        "order": 2,
+        "width": 5,
+        "height": 4,
+        "name": "",
+        "icon": "",
+        "label": "повітря",
+        "unit": "*С",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#ff00ff",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 40,
+                "col": "#ff00ff",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 780,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "ed1b985a.f88718",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "d23afecb.5be03",
+        "order": 3,
+        "width": 5,
+        "height": 4,
+        "name": "",
+        "icon": "",
+        "label": "підлога",
+        "unit": "*С",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#ff8000",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 40,
+                "col": "#ff8000",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 520,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "896e9b37.cb6408",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "f5900839.f52148",
+        "order": 1,
+        "width": 6,
+        "height": 6,
+        "name": "",
+        "icon": "",
+        "label": "Повїтря",
+        "unit": "*С",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": -30,
+                "col": "#04f60c",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 100,
+                "col": "#04f60c",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 580,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "b176d95f.4aef38",
+        "type": "telegram sender",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "bot": "0425a63b76c6eb3e",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 910,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80983325.d2d32",
+        "type": "change",
+        "z": "8fd05549.35a2e8",
+        "name": "Exemple_for_telegram",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.content",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.chatId",
+                "pt": "msg",
+                "to": "188766073",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "payload.type",
+                "pt": "msg",
+                "to": "message",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 1240,
+        "wires": [
+            [
+                "b176d95f.4aef38"
+            ]
+        ]
+    },
+    {
+        "id": "b504794.3053188",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "3f392fff.fa86a",
+        "order": 1,
+        "width": 5,
+        "height": 4,
+        "name": "",
+        "icon": "",
+        "label": "вологість",
+        "unit": "%",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#0000c4",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 100,
+                "col": "#0000c4",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 780,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "dc4e02c0.d0b2f",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "3f392fff.fa86a",
+        "order": 2,
+        "width": 5,
+        "height": 4,
+        "name": "",
+        "icon": "",
+        "label": "повітря",
+        "unit": "*С",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#ff00ff",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 40,
+                "col": "#ff00ff",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 780,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "d990df65.53555",
+        "type": "ui_artlessgauge",
+        "z": "8fd05549.35a2e8",
+        "group": "3f392fff.fa86a",
+        "order": 3,
+        "width": 5,
+        "height": 4,
+        "name": "",
+        "icon": "",
+        "label": "підлога",
+        "unit": "*С",
+        "layout": "radial",
+        "decimals": "1",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#ff8000",
+                "t": "min",
+                "dot": 1
+            },
+            {
+                "val": 40,
+                "col": "#ff8000",
+                "t": "max",
+                "dot": 1
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 560,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "5aaaacb916a8859e",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "TP_Balkon",
+        "func": "var TP_BALKON =global.get('TP_BALKON') || false;\nvar newMsgT = { payload: msg.payload};\nglobal.set('TP_BALKON',newMsgT);\nmsg.payload=TP_BALKON;\nreturn TP_BALKON;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "480e68cddbc730e2",
+        "type": "debug",
+        "z": "8fd05549.35a2e8",
+        "name": "TP_BALKON",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "bce0ca131dc6e43f",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "TP_BALKON",
+        "payloadType": "global",
+        "x": 1370,
+        "y": 180,
+        "wires": [
+            [
+                "480e68cddbc730e2"
+            ]
+        ]
+    },
+    {
+        "id": "55572d50099de0a5",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "TP_Zal",
+        "func": "var TP_ZAL1 = global.get('TP_ZAL1') || 0;\nvar newMsgT = { payload: msg.payload };\nglobal.set('TP_ZAL1',newMsgT);\nmsg.payload=TP_ZAL1;\nreturn TP_ZAL1;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a45e36e76b1bc2f",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "TP_ZAL1",
+        "payloadType": "global",
+        "x": 1360,
+        "y": 380,
+        "wires": [
+            [
+                "c03127cc19e66e63"
+            ]
+        ]
+    },
+    {
+        "id": "c03127cc19e66e63",
+        "type": "debug",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "4d3016e09eb8139c",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "TP_HOLL",
+        "func": "var TP_HOLL=global.get('TP_HOLL') || 0;\nvar newMsgT = { payload: msg.payload };\nglobal.set('TP_HOLL',newMsgT);\nmsg.payload=TP_HOLL;\nreturn TP_HOLL;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28495deb68c98496",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "TP_HOLL",
+        "payloadType": "global",
+        "x": 1360,
+        "y": 580,
+        "wires": [
+            [
+                "e4b38471952ad12e"
+            ]
+        ]
+    },
+    {
+        "id": "e4b38471952ad12e",
+        "type": "debug",
+        "z": "8fd05549.35a2e8",
+        "name": "global TP_HOLL",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1580,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "cc5cfd5bd78f23a5",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "TP_KITCHEN",
+        "func": "var TP_KITCHEN = global.get('TP_KITCHEN') || 0;\nvar newMsgT = { payload: msg.payload };\nglobal.set('TP_KITCHEN',newMsgT);\nmsg.payload=TP_KITCHEN;\nreturn TP_KITCHEN;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef84435ab2c29f90",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "TP_KITCHEN",
+        "payloadType": "global",
+        "x": 1370,
+        "y": 780,
+        "wires": [
+            [
+                "93a4c65db79f2ac4"
+            ]
+        ]
+    },
+    {
+        "id": "93a4c65db79f2ac4",
+        "type": "debug",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "b66d56c851b922f4",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "TP_BATHROOM",
+        "func": "var TP_BATHROOM = global.get('TP_BATHROOM') || 0;\nvar newMsgT = { payload: msg.payload };\nglobal.set('TP_BATHROOM',newMsgT);\nmsg.payload=TP_BATHROOM;\nreturn TP_BATHROOM;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48ae614588aa3850",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "TP_BATHROOM",
+        "payloadType": "global",
+        "x": 1380,
+        "y": 1020,
+        "wires": [
+            [
+                "c5461b67f07a2623"
+            ]
+        ]
+    },
+    {
+        "id": "c5461b67f07a2623",
+        "type": "debug",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "610c2308e572192c",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "проверка температури T_OUT",
+        "func": "var payload={ payload: parseFloat(msg.payload)};\nvar T_OUT =global.get('T_OUT') || 0;\nglobal.set('T_OUT',payload);\nmsg.payload=payload;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 1240,
+        "wires": [
+            [
+                "bd8f10584e125982"
+            ]
+        ]
+    },
+    {
+        "id": "70ec5a85c1867147",
+        "type": "average-bars",
+        "z": "8fd05549.35a2e8",
+        "name": "Carrency",
+        "title": "TEMP_OUT",
+        "period": "day",
+        "yMin": "",
+        "yMax": "",
+        "showBarsValue": true,
+        "showScaleValue": true,
+        "showLastValue": true,
+        "showAverageValue": true,
+        "showMinimumValue": true,
+        "showMaximumValue": true,
+        "maxBar": "50",
+        "topColor": "#05a31f",
+        "bottomColor": "#9ef915",
+        "unit": "",
+        "fontColor": "#fcf7f7",
+        "barStyle": "Rectangle",
+        "decimal": 1,
+        "x": 400,
+        "y": 1080,
+        "wires": [
+            [
+                "4930fcd05fc550e7"
+            ]
+        ]
+    },
+    {
+        "id": "4930fcd05fc550e7",
+        "type": "ui_template",
+        "z": "8fd05549.35a2e8",
+        "group": "f5900839.f52148",
+        "name": "",
+        "order": 2,
+        "width": 6,
+        "height": 6,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 720,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c38bdf621795ab3",
+        "type": "inject",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "temp_out",
+        "payloadType": "global",
+        "x": 120,
+        "y": 1360,
+        "wires": [
+            [
+                "2bb518cd8d1cb303"
+            ]
+        ]
+    },
+    {
+        "id": "2bb518cd8d1cb303",
+        "type": "debug",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "755534e68675984a",
+        "type": "rbe",
+        "z": "8fd05549.35a2e8",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 310,
+        "y": 1180,
+        "wires": [
+            [
+                "80983325.d2d32"
+            ]
+        ]
+    },
+    {
+        "id": "bd8f10584e125982",
+        "type": "function",
+        "z": "8fd05549.35a2e8",
+        "name": "temp_out",
+        "func": "var payload=msg.payload.payload;\nvar temp_out =global.get('temp_out') || 0;\nglobal.set('temp_out',payload);\nmsg.payload=payload;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 1320,
+        "wires": [
+            [
+                "2bb518cd8d1cb303"
+            ]
+        ]
+    },
+    {
+        "id": "299e6ecc.1aff42",
+        "type": "mqtt-broker",
+        "name": "Sensors_Kvartyra",
+        "broker": "192.168.31.145",
+        "port": "1883",
+        "tls": "",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "2",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "fb49feae.23c74",
+        "type": "mqtt-broker",
+        "name": "MQTT_Outside",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b98805b9.c45be8",
+        "type": "ui_group",
+        "name": "Зал",
+        "tab": "d447e6b0.9f0698",
+        "order": 2,
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "de3391ed.804fc",
+        "type": "ui_group",
+        "name": "Коридор",
+        "tab": "d447e6b0.9f0698",
+        "order": 5,
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "e84c89bf.6f0658",
+        "type": "ui_group",
+        "name": "Кухня",
+        "tab": "d447e6b0.9f0698",
+        "order": 3,
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "d23afecb.5be03",
+        "type": "ui_group",
+        "name": "Туалет",
+        "tab": "d447e6b0.9f0698",
+        "order": 4,
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "f5900839.f52148",
+        "type": "ui_group",
+        "name": "Ззовнї",
+        "tab": "d447e6b0.9f0698",
+        "order": 6,
+        "disp": true,
+        "width": 6,
+        "collapse": false
+    },
+    {
+        "id": "0425a63b76c6eb3e",
+        "type": "telegram bot",
+        "botname": " temp_out_vilson_bot:",
+        "usernames": "",
+        "chatids": "188766073",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "3f392fff.fa86a",
+        "type": "ui_group",
+        "name": "Балкон",
+        "tab": "d447e6b0.9f0698",
+        "order": 1,
+        "disp": true,
+        "width": 5,
+        "collapse": false
+    },
+    {
+        "id": "d447e6b0.9f0698",
+        "type": "ui_tab",
+        "name": "All_sensors",
+        "icon": "балкон",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
